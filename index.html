@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SPHINX</title>
+    <script src="https://kit.fontawesome.com/f451ce2063.js" crossorigin="anonymous"></script>
+    <link id="link" rel="stylesheet" href="./bootstrap-4.4.1-dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <!-- start preloader -->
+    <div class="loader-wrapper d-flex flex-column justify-content-around">
+        <div class="loader">
+            <div></div><div></div><div></div><div></div>
+        </div>
+    </div>
+    <!-- end preloader -->
+
+    <main>
+        <div class="container p-0">
+            <!-- <div class="responsive-iframe  "> -->
+                <!-- start header -->
+                <header class="header d-flex justify-content-between  align-items-center">
+                    <h1>what's in the basket? choose and write.</h1>
+                    <div class="header-icons d-flex justify-content-between">
+                        <div class="heaader-icon_wrapper" id="photo">
+                            <img src="./Screenshot_1.png" alt="" class="img-fluid" >
+                        </div>
+                        <div class="heaader-icon_wrapper" id="help">
+                            <img src="./Screenshot_2.png" alt="" class="img-fluid">
+                        </div>
+                    </div>
+                </header>
+                <!-- end header -->
+                <!-- start page containt -->
+                <div class="page-containt p-3 ">
+                    <div class="page-content_wrapper" >
+                        <div class="photo-layer">
+                            <div class="photo-layer_wraper">
+                                <img src="./image.jpg" alt="">
+                            </div>
+                            <div class="close-icon"><img src="./close.png" alt=""></i></div>
+                        </div>
+                        <div class="help-layer">
+                            <p>Help content goes here</p>
+                            <div class="close-icon"><img src="./close.png" alt=""></i></div>
+                        </div>
+                        <div class="page-containt_choices  ">
+                            <div class="row flex-nowrap justify-content-around">
+                                <div class="choice incorrect">scissors</div>
+                                <div class="choice correct">eraser</div>
+                                <div class="choice correct ">ruler</div>
+                                <div class="choice incorrect">bag</div>
+                            </div>
+                            <div class="row flex-nowrap justify-content-around">
+                                <div class="choice incorrect">pencil case</div>
+                                <div class="choice correct">pencil</div>
+                                <div class="choice correct">book</div>
+                                <div class="choice correct">pen</div>
+                            </div>
+                        </div>
+                        <div class="page-containt_answers">
+                            <div class="row flex-nowrap justify-content-between pl-4 pr-4">
+                                <div class="answer-wrapper d-flex justify-content-between align-items-center">
+                                    <span class="answer">dumy</span>
+                                    <div class="icon">
+                                        <img src="./951a617272553f49e75548e212ed947f-curved-check-mark-icon-by-vexels.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="answer-wrapper d-flex justify-content-between align-items-center">
+                                    <span class="answer">dumy</span>
+                                    <div class="icon">
+                                        <img src="./951a617272553f49e75548e212ed947f-curved-check-mark-icon-by-vexels.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row flex-nowrap justify-content-between pl-4 pr-4 ">
+                                <div class="answer-wrapper d-flex justify-content-between align-items-center">
+                                    <span class="answer">dumy</span>
+                                    <div class="icon">
+                                        <img src="./951a617272553f49e75548e212ed947f-curved-check-mark-icon-by-vexels.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="answer-wrapper d-flex justify-content-between align-items-center">
+                                    <span class="answer">dumy</span>
+                                    <div class="icon">
+                                        <img src="./951a617272553f49e75548e212ed947f-curved-check-mark-icon-by-vexels.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="answer-wrapper d-flex justify-content-between align-items-center">
+                                    <span class="answer">dumy</span>
+                                    <div class="icon">
+                                        <img src="./951a617272553f49e75548e212ed947f-curved-check-mark-icon-by-vexels.png" alt="">
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div id="overlay"></div>
+                </div>
+                <!-- end page containt -->
+                <!-- start footer -->
+                <div class="footer  ">
+                    <div class="col-8 d-flex flex-nowrap justify-content-between ">
+                        <div class="footer-img" id="reset">
+                            <img src="./Screenshot_4.png" alt="" class="img-fluid">
+                        </div>
+                        <div class="footer-img"  id="show">
+                            <img src="./Screenshot_5.png" alt="" class="img-fluid ">
+                        </div>
+                    </div>
+                </div>
+                <!-- end footer -->
+            <!-- </div> -->
+        </div>
+    </main>
+    <audio  id="wrong-audio">
+        <source src="./Wrong-answer-sound-effect.mp3" type="audio/ogg">
+        <source src="./Wrong-answer-sound-effect.mp3" type="audio/mpeg">
+    </audio>
+    <audio  id="correct-audio">
+        <source src="./Game-show-correct-answer.mp3" type="audio/ogg">
+        <source src="./Game-show-correct-answer.mp3" type="audio/ogg">
+    </audio>
+    <script src="./jquery-3.4.1.min.js"></script>
+    <script src="./bootstrap-4.4.1-dist/js/bootstrap.min.js"></script>
+    <script src="./popper.min.js"></script>
+
+    <script src="./script.js"></script>
+</body>
+</html>
